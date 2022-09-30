@@ -5,7 +5,7 @@
   <b-card bg-variant="light">
     <b-form-group
       label-cols-lg="3"
-      label="CREAR EVENTO"
+      label="EVENTOS MAS"
       label-size="lg"
       label-class="font-weight-bold pt-0"
       class="mb-0"
