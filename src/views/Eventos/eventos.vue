@@ -1,17 +1,21 @@
 <template>
-     
-   
+
+  
+
+    
      <div>
   <b-card bg-variant="light">
+    
     <b-form-group
       label-cols-lg="3"
-      label="EVENTOS MAS"
+      label="CREAR NUEVA PUBLICACION"
       label-size="lg"
       label-class="font-weight-bold pt-0"
       class="mb-0"
     >
+     
       <b-form-group
-        label="NOMBRE DE EVENTO:"
+        label="NOMBRE DE LA PUBLICACION:"
         label-for="nested-street"
         label-cols-sm="3"
         label-align-sm="right"
@@ -45,6 +49,19 @@
       >
         <b-form-input id="nested-country"></b-form-input>
       </b-form-group>
+      <b-form-group>
+
+<h3>Seleccione una categoria</h3>
+<select v-model="selecciono">
+<option disabled value="">Seleccione una opcion</option>
+<option>deporte</option>
+<option>Salud</option>
+<option>cultura</option>
+<option>integracion</option>
+
+</select>
+<span>Seleccione una: {{ selected }}</span>
+</b-form-group>
 
       <b-form-group
         label="Ship via:"
