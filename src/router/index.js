@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 import login from '../views/login/login.vue'
+import Eventos from '../views/Eventos/eventos.vue'
+
 
 Vue.use(VueRouter)
 
@@ -18,7 +20,11 @@ const routes = [
     name: 'login',
     component: login
   },
-
+  {
+    path: '/eventos',
+    name: 'eventos',
+    component: Eventos
+  },
 
   {
     path: '/about',

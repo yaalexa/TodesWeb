@@ -49,7 +49,7 @@
 <script>
   import axios from 'axios'
     export default{
-    name:'login',
+    name:'Eventos',
     data(){},
     components:{},
     methods:{},
@@ -71,7 +71,7 @@ h1 {
 }
 
 
-.primero {
+.primer {
   display: flex;
   justify-content: center;
 }
