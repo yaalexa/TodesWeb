@@ -1,81 +1,91 @@
 <template>
 
+
+<div class="formcontent container-fluid">
+    <h3> CREAR PUBLICACION</h3>
+    
+    
+    <b-form-group id="input-group-2" label="Nombre de publicacion" label-for="textarea-autohe-height">
+        <b-form-input
+          id="input-2"
+          placeholder="Nombre publicacion"          
+        ></b-form-input>
+      </b-form-group>
+ 
+
+  <b-row>
+    <b-col sm="2">
+      <label for="textarea-auto-height">Descripcion:</label>
+    </b-col>
+    <b-col sm="20">
+      <b-form-textarea
+        id="textarea-auto-height"
+        placeholder="Describa su nueva publicacion"
+        rows="3"
+        max-rows="3"
+      ></b-form-textarea>
+    </b-col>
+  </b-row>
+
+  <div>
+    <b-col sm="2">
+      <label for="textarea-auto-height">Fecha:</label>
+    </b-col>
+    <b-form-datepicker v-model="value" :min="min" :max="max" locale="es"></b-form-datepicker>
+    
+   <div>
+      <b-col sm="2">
+      <label for="textarea-auto-height">Hora:</label>
+      </b-col>
+    <template>
+      <div>
+        <b-form-timepicker v-model="value" show-seconds locale="en"></b-form-timepicker>
+      </div>
+    </template>
+
+  </div> 
+
+  <div>
+     <b-col sm="2">
+      <label for="textarea-auto-height">Lugar:</label>
+    </b-col>
+        <b-form-input
+          id="input-2"
+          placeholder="Ingrece el citio"
+          required
+        ></b-form-input>
+      </div>
+      
+      <b-col sm="2"></b-col>
+      <div>        
+  <b-button-group>
+    <b-button>Estado</b-button>
+    <b-dropdown right text="Seleccione">
+      <b-dropdown-item>Activo</b-dropdown-item>
+      <b-dropdown-item>Inactivo</b-dropdown-item>
+      </b-dropdown>
+  </b-button-group>
+      </div>
+    </b-col>
+    
+     
+
   
 
-    
-     <div>
-  <b-card bg-variant="light">
-    
-    <b-form-group
-      label-cols-lg="3"
-      label="CREAR NUEVA PUBLICACION"
-      label-size="lg"
-      label-class="font-weight-bold pt-0"
-      class="mb-0"
-    >
-     
-      <b-form-group
-        label="NOMBRE DE LA PUBLICACION:"
-        label-for="nested-street"
-        label-cols-sm="3"
-        label-align-sm="right"
-      >
-        <b-form-input id="nested-street"></b-form-input>
-      </b-form-group>
+  </div> 
+  
 
-      <b-form-group
-        label="City:"
-        label-for="nested-city"
-        label-cols-sm="3"
-        label-align-sm="right"
-      >
-        <b-form-input id="nested-city"></b-form-input>
-      </b-form-group>
+  </div>
 
-      <b-form-group
-        label="State:"
-        label-for="nested-state"
-        label-cols-sm="3"
-        label-align-sm="right"
-      >
-        <b-form-input id="nested-state"></b-form-input>
-      </b-form-group>
 
-      <b-form-group
-        label="Country:"
-        label-for="nested-country"
-        label-cols-sm="3"
-        label-align-sm="right"
-      >
-        <b-form-input id="nested-country"></b-form-input>
-      </b-form-group>
-      <b-form-group>
+</template>
 
-<h3>Seleccione una categoria</h3>
-<select v-model="selecciono">
-<option disabled value="">Seleccione una opcion</option>
-<option>deporte</option>
-<option>Salud</option>
-<option>cultura</option>
-<option>integracion</option>
-
-</select>
-<span>Seleccione una: {{ selected }}</span>
-</b-form-group>
-
-      <b-form-group
-        label="Ship via:"
-        label-cols-sm="3"
-        label-align-sm="right"
-        class="mb-0"
-        v-slot="{ ariaDescribedby }"
-      >
-        <b-form-radio-group
-          class="pt-2"
-          :options="['Air', 'Courier', 'Mail']"
-          :aria-describedby="ariaDescribedby"
-        ></b-form-radio-group>
-      </b-form-group>
-    </b-form-group>
-  </b-card>
-</div>
+<script>
+  export default {
+    data() {
+      return {
+        value: ''
+      }
+    }
+  }
+</script>
