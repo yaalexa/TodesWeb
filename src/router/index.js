@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 
 import login from '../views/login/login.vue'
 import Eventos from '../views/Eventos/eventos.vue'
+import EditarEvento from '../views/EditarEvento/editarevento.vue'
 
 
 Vue.use(VueRouter)
@@ -24,6 +25,11 @@ const routes = [
     path: '/eventos',
     name: 'eventos',
     component: Eventos
+  },
+  {
+    path: '/editar',
+    name: 'editarevento',
+    component: EditarEvento
   },
 
   {

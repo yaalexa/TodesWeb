@@ -134,3 +134,8 @@
     }
   }
 </script>
+
+<style
+.formcontent container-fluid {color: darkgray;
+  font-style: italic;}
+
