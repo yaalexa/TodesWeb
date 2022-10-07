@@ -49,7 +49,7 @@ import axios from "axios"
             },
 
             NuevaCategoria(){
-                this.$router.push('/NuevaCategoria')
+                this.$router.push('NuevaCategoria')
             }
            
         }
