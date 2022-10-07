@@ -1,7 +1,7 @@
 <template>
 
 
- <div class="formcontent container-fluid">
+ <div class="formcontent container-fluid bg-dark text-white">
     <h3> CREAR PUBLICACION</h3>
     
     
@@ -27,7 +27,7 @@
    </b-row>
 
 <div>
-  <b-form-group id="input-group-2" label="Fecha de publicacion" label-for="textarea-autohe-height"></b-form-group>
+  <b-form-group id="input-group-2" label="Fecha de Realizacion" label-for="textarea-autohe-height"></b-form-group>
    <b-calendar
     selected-variant="success"
     today-variant="info"
@@ -62,21 +62,13 @@
         ></b-form-input>
     </div>
       
-     
     <div>
-      <b-form-group id="input-group-2" label="Estado de publicacion" label-for="textarea-autohe-height"></b-form-group>
-    <b-row>
-    <b-col sm="2">        
-   <b-dropdown id="dropdown-1" text="Seleccione uno " class="m-md-2">
-    <b-dropdown-item>activo</b-dropdown-item>
-    <b-dropdown-item>nactivo</b-dropdown-item>
-    <b-dropdown-divider></b-dropdown-divider>
-    <b-dropdown-item active>Active action</b-dropdown-item>
-    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
-   </b-dropdown>
-    </b-col>
-    </b-row>
+    <b-form-group id="input-group-2" label="Estado de la publicacion" label-for="textarea-autohe-height"></b-form-group>
+    <div>
+    <b-form-select v-model="selected" :options="options"></b-form-select>
+    <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
   </div>
+      </div>
 
   <div>  
   <b-form-group id="input-group-2" label="URL" label-for="textarea-autohe-height"></b-form-group>
@@ -110,22 +102,65 @@
 
 
   <div>
-    <b-form-group id="input-group-2" label="Tipo de publicacion" label-for="textarea-autohe-height"></b-form-group>
-    <b-form-select v-model="selected" :options="options" size="sm" class="mt-3"></b-form-select>
+    <b-form-group id="input-group-2" label="Tipo de publicación" label-for="textarea-autohe-height"></b-form-group>
+    <b-form-select v-model="selected" :options="options" size="sm" class="mt-4"></b-form-select>
     <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
+  </div>
+
+
+  <div>
+    
+    <b-button variant="success">ACEPTAR</b-button>
+    
+  <!-- This link will only be active at `/` -->
+  
+
   </div>
 
   </div> 
   
+ 
+
+  
   
 </template>
+
+
+
+
+<script>
+  export default {
+    data() {
+      return {
+        value: '',
+        context: null
+      }
+    }
+  }
+</script>
+
+<script>
+  export default {
+    data() {
+      return {
+        selected: 'A',
+        options: [
+          { item: 'A', name: 'Option A' },
+          { item: 'B', name: 'Option B' }
+         
+        ]
+      }
+    }
+  }
+</script>
+
 <script>
   export default {
     data() {
       return {
         selected: null,
         options: [
-          { value: null, text: 'Por favor seleccione una opcion' },
+          { value: null, text: 'Seleccione una opcion' },
           { value: 'a', text: 'Evento' },
           { value: 'b', text: 'Noticia' }
           

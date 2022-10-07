@@ -1,7 +1,7 @@
 <template>
 
 
-    <div class="formcontent container-fluid">
+    <div class="formcontent container-fluid  bg-dark text-white">
        <h3> EDITAR PUBLICACION</h3>
        
        
@@ -108,6 +108,11 @@
        <div class="mt-3">Selected: <strong>{{ selected }}</strong></div>
      </div>
    
+     <div>
+    <b-button variant="success">GUARDAR CAMBIOS</b-button>
+  </div>
+
+  </div> 
      </div> 
      
      
