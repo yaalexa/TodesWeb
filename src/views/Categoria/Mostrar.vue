@@ -2,9 +2,11 @@
 
 <div>
     <h1>Mostar categorias</h1>
-    <b-table>
-
-    </b-table>
+    <button @click="NuevaCategoria()">Nueva Categoria</button>
+    <b-table :fields="encabezado" :items="categoria">
+    </b-table> 
+      
+  
 </div>
 </template>
 
@@ -20,8 +22,12 @@ import axios from "axios"
         data(){
           return {
             categoria:[],
-          }
-        },
+            encabezado:[
+        {key:"id",label:"Id"},
+        {key:"nombre",label:"Nombre"},
+       { key:"descripcion",label:"Descripcion"}],
+          
+          }},
         components:{
 
         },
@@ -40,8 +46,12 @@ import axios from "axios"
                 {
                    this.categoria=response.data;
                 })
-            }
+            },
 
+            NuevaCategoria(){
+                this.$router.push('/NuevaCategoria')
+            }
+           
         }
     }
 

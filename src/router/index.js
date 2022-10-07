@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Mostrarcategorias from '../views/Categoria/Mostrar.vue'
+import NuevaCategoria from '../views/Categoria/NuevaCategoria.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     path:'/Mostrarcategorias',
     name:'Mostrarcategorias',
     component:Mostrarcategorias
+  },
+  {
+    path:'/NuevaCategoria',
+    name:'NuevaCategoria',
+    component:NuevaCategoria
   }
 ]
 
