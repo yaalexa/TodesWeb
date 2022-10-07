@@ -12,7 +12,7 @@
 
 
 
-import Axios from "axios"
+import axios from "axios"
 //import { response } from "express";
 // el axios permite  llamar  todas las  apis  que se hayan creado
     export default {
@@ -36,7 +36,7 @@ import Axios from "axios"
         methods:{
 
             getcategorias(){
-                this.Axios.get("http://127.0.0.1:8000/api/categoria_index").then((response)=>
+                this.axios.get("http://127.0.0.1:8000/api/categoria").then((response)=>
                 {
                    this.categoria=response.data;
                 })

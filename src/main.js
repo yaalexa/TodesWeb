@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
-import Axios from 'axios'
+//import Axios from 'axios'
 import VueAxios from 'vue-axios'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
@@ -15,7 +15,7 @@ Vue.use(BootstrapVue)
     // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 Vue.config.productionTip = false
-Vue.use(VueAxios, Axios)
+Vue.use(VueAxios, axios)
 new Vue({
     router,
     render: h => h(App)
