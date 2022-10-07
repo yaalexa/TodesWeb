@@ -3,11 +3,11 @@
     <h1>Nueva Categoria</h1>
     <label for="">Categorias</label>
 
-    <input type="text" v-model="form.nombre"/><br><br>
-    <label for="">Descripcion</label>
-    <input type="text" v-model="form.descripcion"/>
+    <b-input type="text" v-model="form.nombre"/><br><br>
+    <b-label for="">Descripcion</b-label>
+    <b-input type="text" v-model="form.descripcion"/><br>
 
-    <button @click="GuardarCategoria()">REGISTRAR</button>
+    <b-button @click="GuardarCategoria()">REGISTRAR</b-button>
 
     <!--el v-model es para  hacer la conecion con  el html con el script-->
 </div>

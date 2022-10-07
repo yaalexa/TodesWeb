@@ -2,7 +2,7 @@
 
 <div>
     <h1>Mostar categorias</h1>
-    <button @click="NuevaCategoria()">Nueva Categoria</button>
+    <b-button @click="NuevaCategoria()">Nueva Categoria</b-button>
     <b-table :fields="encabezado" :items="categoria">
     </b-table> 
       
