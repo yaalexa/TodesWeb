@@ -2,7 +2,7 @@
 
 <div>
 
-
+    <navbar></navbar>
     <siderbar></siderbar>
     administrador 
 </div>
@@ -12,6 +12,7 @@
 <script>
 import axios from 'axios'
     import siderbar from '../../components/Siderbar.vue'
+    import navbar from '../../components/Navbar.vue'
       export default{
       name:'Dashboard',
       data(){
@@ -22,7 +23,8 @@ import axios from 'axios'
       },
       
       components:{
-        siderbar
+        siderbar,
+        navbar
       },
       methods:{
         

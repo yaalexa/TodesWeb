@@ -17,8 +17,11 @@
                     <a></a>         
                 </li>
                 <li>
+
+                    
                      <router-link to="/MostrarEventos">Eventos</router-link>
-                     <a></a>
+                     <b-dropdown-item href="#">Ver Eventos</b-dropdown-item>
+          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
                   </li>
                 <li>
                      <router-link to="/MostrarReportes">Reportes</router-link>
