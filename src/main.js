@@ -16,7 +16,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(VueAxios,axios) //
-Vue.use(VueAxios,Axios) //
+Vue.use(VueAxios,axios) //
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false

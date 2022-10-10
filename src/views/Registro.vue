@@ -4,12 +4,12 @@
         <b-container class="formcontent" fluid>
           <div class="fadein">
             <h1> Registro de Usuario </h1>
-  
+
             <b-img class="icon" :src="require('@/assets/lgtb.png')" fluid></b-img>
           </div>
-  
-  
-  
+
+
+
           <div class="input">
             <b-row class="my-1">
               <b-col sm="1">
@@ -19,10 +19,10 @@
                 <b-form-input id="" type="text"></b-form-input>
               </b-col>
             </b-row>
-  
+
             <b-row class="my-1">
               <b-col sm="1">
-                <label>nombre</label>
+                <label>Nombre</label>
               </b-col>
               <b-col sm="12">
                 <b-form-input id="" type="text"></b-form-input>
@@ -61,7 +61,7 @@
                 <label>Genero</label>
               </b-col>
               <b-col sm="12">
-               
+
               <b-form-input id="" type="text">  </b-form-input>
               </b-col>
             </b-row>
@@ -78,20 +78,20 @@
             <div class="link">
               <b-link href="">¿Olvidaste tu contraseña?</b-link>
             </div>
-  
-            <b-button variant="outline-primary">ENTRAR</b-button>
+
+            <b-button @click="Form_registro()" variant="outline-primary">ENTRAR</b-button>
           </div>
           <div class="link">
             <b-link href="">¿No tienes cuenta? Registrate</b-link>
           </div>
-  
-  
+
+
         </b-container>
       </div>
-  
+
     </div>
-  
-  
+
+
   </template>
   <script>
     import axios from 'axios'
@@ -102,20 +102,22 @@
         return{
           
         }
-
-
       },
-
       
       components:{},
-      methods:{},
+      methods:{
+        Form_registro()
+        {
+           this.$router.push('/')
+        }
+      },
       computed:{},
       mounted:{}
       } 
           
   </script>
-  
-  
+
+
   <style>
   h1 {
     

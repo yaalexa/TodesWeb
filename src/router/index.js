@@ -3,31 +3,35 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Mostrarcategorias from '../views/Categoria/Mostrar.vue'
 import NuevaCategoria from '../views/Categoria/NuevaCategoria.vue'
-
-import login from '../views/login/login.vue'
-import registrarse from '../views/login/registrarse.vue'
+import Login from '../views/Login.vue'
+import Dashboard from '../views/Admin/Dashboard.vue'
+//import login from '../views/login/login.vue'
+import Registro from '../views/Registro.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+ 
+
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'Login',
+    component: Login
   },
 
   {
-    path: '/login',
-    name: 'login',
-    component: login
+    path: '/Registro',
+    name: 'Registro',
+    component: Registro
   },
+
 
   {
-    path: '/registrarse',
-    name: 'registrarse',
-    component: registrarse
+    path: '/Dashboard',
+    name: 'Dashboard',
+    component: Dashboard
   },
-
+  
   
 
 

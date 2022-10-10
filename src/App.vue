@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <nav>
+    <!--<nav>
       <router-link to="/">Home</router-link> |
-<<<<<<< HEAD
+
       <router-link to="/about">About</router-link>
       <router-link to="/Mostrarcategorias">Categorias</router-link>
-=======
-      <router-link to="/about">About</router-link> |
-      <router-link to="/login">login</router-link> |
+
+      <router-link to="/about">About</router-link> 
+      <router-link to="/Login">login</router-link> 
       <router-link to="/registrarse">registrarse</router-link>
 
->>>>>>> 835f3f8bfcc760da56d628ff48ae7bb15d2d932a
-    </nav>
+
+    </nav>-->
     <router-view/>
   </div>
 </template>
