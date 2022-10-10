@@ -3,7 +3,9 @@
 <div>
 
     <navbar></navbar>
-    <siderbar></siderbar>
+    <siderbar>
+      
+    </siderbar>
     administrador 
 </div>
     

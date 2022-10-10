@@ -5,7 +5,7 @@ import Mostrarcategorias from '../views/Categoria/Mostrar.vue'
 import NuevaCategoria from '../views/Categoria/NuevaCategoria.vue'
 import Login from '../views/Login.vue'
 import Dashboard from '../views/Admin/Dashboard.vue'
-//import login from '../views/login/login.vue'
+import Vereventos from '../views/Admin/Eventos/Vereventos'
 import Registro from '../views/Registro.vue'
 
 Vue.use(VueRouter)
@@ -32,7 +32,17 @@ const routes = [
     component: Dashboard
   },
   
-  
+  {
+    path: '/Vereventos',
+    name: 'Vereventos',
+    component: Vereventos
+  },
+  {
+    path: '/Mostrarcategorias"',
+    name: '/Mostrarcategorias"',
+    component: Mostrarcategorias
+  },
+
 
 
   {
