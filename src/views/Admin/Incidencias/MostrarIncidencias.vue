@@ -23,8 +23,8 @@
           incidencias:null,
           encabezado:[
             {key:'id',label:'#'},
-            {key:'nombre_categoria',label:'Nombre'},
-            {key:'descripcion_categoria',label:'Descripcion'}
+            {key:'nombre',label:'Nombre'},
+            {key:'descripcion',label:'Descripcion'}
           ]
           
         }
@@ -38,7 +38,7 @@
       },
       computed:{},
       mounted:function(){
-        this.axios.get("http://127.0.0.1:8000/api/categoria").then(reponse=>{
+        this.axios.get("http://127.0.0.1:8000/api/categoria").then(response=>{
           this.incidencias=response.data
         })
       }
