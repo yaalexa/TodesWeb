@@ -22,7 +22,7 @@
 
             <b-row class="my-1">
               <b-col sm="1">
-                <label>Nombre</label>
+                <label>Nombres</label>
               </b-col>
               <b-col sm="12">
                 <b-form-input id="" type="text"></b-form-input>
@@ -56,15 +56,7 @@
               </b-col>
             </b-row>
 
-            <b-row class="my-1">
-              <b-col sm="1">
-                <label>Genero</label>
-              </b-col>
-              <b-col sm="12">
-
-              <b-form-input id="" type="text">  </b-form-input>
-              </b-col>
-            </b-row>
+           
 
             <b-row class="my-1">
               <b-col sm="1">
@@ -100,7 +92,10 @@
       data(){
       
         return{
-          
+           registro:
+           {
+
+           }
         }
       },
       
@@ -108,9 +103,14 @@
       methods:{
         Form_registro()
         {
+          this.Axios.post("http://127.0.0.1:8000/api/users_register",this.registro)
+           .then(data=>{
+            console.log(data)
            this.$router.push('/')
-        }
-      },
+        }).catch(error=> {console.log(error)})
+           alert("Se registro correctamente")
+      }
+    },
       computed:{},
       mounted:{}
       } 

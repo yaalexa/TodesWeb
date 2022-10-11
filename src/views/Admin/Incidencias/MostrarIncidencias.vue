@@ -1,13 +1,16 @@
 <template>
     <div>
         Estoy en MostrarIncidencias
-        <siderbar>
-    
-</siderbar>
         <b-table id="table_incidencias" :items="incidencias" :fields="encabezado">
-
         </b-table>
+        <div>
+          <siderbar>
+          </siderbar>
+        </div>
+        
+        
     </div>
+    
 
     
   
@@ -23,8 +26,8 @@
           incidencias:null,
           encabezado:[
             {key:'id',label:'#'},
-            {key:'nombre_categoria',label:'Nombre'},
-            {key:'descripcion_categoria',label:'Descripcion'}
+            {key:'nombre',label:'Nombre'},
+            {key:'descripcion',label:'Descripcion'}
           ]
           
         }

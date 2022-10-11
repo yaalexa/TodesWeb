@@ -50,16 +50,29 @@
     import axios from 'axios'
       export default{
       name:'login',
-      data(){},
+      data(){
+        return{
+          user:
+          {
+            email:null,
+            password:null,
+          }
+        }
+      },
       components:{},
       methods:{
          Ingresar()
          {
+            this.axios.get('',this.user).then(response=>{
+
+            })
             this.$router.push('/Dashboard')
          }
       },
       computed:{},
-      mounted:{}
+      mounted:function(){
+        this.Ingresar()
+      }
       } 
           
   </script>
